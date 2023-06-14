@@ -7,8 +7,7 @@ import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 
 // import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 @Entity
 @Table
@@ -51,7 +50,7 @@ public class Users {
 
     public void addTicker(String newTicker){
         if(this.tickers == null){
-            this.tickers = new ArrayList<>(){
+            this.tickers = new ArrayList<String>(){
                 {
                     add(newTicker);
                 }

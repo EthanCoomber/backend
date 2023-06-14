@@ -9,20 +9,20 @@ import java.util.*;
 
 @Configuration
 public class UsersConfig {
-    @Bean
-    CommandLineRunner commandLineRunner(UsersRepository repository){
-        return args -> {
-            Users test1 = new Users(
-                    "test1"
-            );
+    // @Bean
+    // CommandLineRunner commandLineRunner(UsersRepository repository){
+    //     return args -> {
+    //         Users test1 = new Users(
+    //                 "test1"
+    //         );
 
-            Users test2 = new Users(
-                    "test2"
-            );
+    //         Users test2 = new Users(
+    //                 "test2"
+    //         );
 
-            repository.saveAll(
-                    List.of(test1, test2)
-            );
-        };
-    }
+    //         repository.saveAll(
+    //                 List.of(test1, test2)
+    //         );
+    //     };
+    // }
 }
